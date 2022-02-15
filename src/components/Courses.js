@@ -16,7 +16,7 @@ const Courses = ({match}) => (
     </div>
     
     {/* Write routes here... */}
-    <Route exact path={`${match.path}`} render={() => <Redirect to={`${match.path}/html`}/>}/> 
+    <Route exact path={`${match.path}/`} render={() => <Redirect to={`${match.path}/html`}/>}/> 
     <Route path={`${match.path}/html`} component={HTML}/>
     <Route path={`${match.path}/css`} component={CSS}/>
     <Route path={`${match.path}/javascript`} component={JavaScript}/>
